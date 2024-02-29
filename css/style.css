@@ -1,0 +1,415 @@
+html{
+    scroll-behavior: smooth;
+}
+
+  /* CSS Resets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+ul{
+    list-style-type: none;
+}
+  
+a:hover{
+    color: rgba(100, 16, 16, 0.699);
+}
+  
+body{
+   font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav h1{
+    color: rgba(91, 10, 10, 0.811);
+}
+
+nav ul{
+    display: flex;
+    gap: 1.9rem;  
+}
+nav ul a{
+    color: rgba(91, 10, 10, 0.811);
+    text-decoration: none;  
+}
+nav ul a:hover{
+    font-weight: 20px;
+    font-size: 18px;
+}
+.burger-menu {
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1 rem;
+    max-width: 68.75rem;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.hero img{
+    width: 300px;
+}
+  
+.bio{
+    margin-left: 50px;
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.bio h1{
+    margin-bottom: 20px;
+    color: rgba(91, 10, 10, 0.811)
+}
+.bio-title{
+    color: rgba(91, 10, 10, 0.811) 
+}
+  
+.bio p{
+    padding: 0.3rem 0;
+    
+}
+
+.more-about{
+    padding: 1rem 6rem;
+    margin-top: 50px;
+}
+  
+.more-about h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(91, 10, 10, 0.811)
+}
+  
+.more-about p{
+    padding: 0.4rem;
+}
+/* Skills section */
+.skills{
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+.skill-header{
+    margin-bottom: 1rem;
+    color: rgba(91, 10, 10, 0.811)
+}
+  
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+  
+.icon{
+    width: 11.875rem;
+    height: 11.25rem;
+}
+/* Skills section ends */
+
+/* Projects section */
+.projects{
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+  
+.project-pic{
+    width: 85%;
+}
+  
+.projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.btnCards{
+    margin-top: 15px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    background-color: rgba(91, 10, 10, 0.811);
+    border: none;
+    border-radius: 10px;  
+}
+.btnCards a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.btnCards:hover{
+   background-color:rgba(91, 10, 10, 0.299);
+}
+.btnCards a:hover{
+    color: rgba(91, 10, 10, 0.811);
+}
+.projects-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgba(91, 10, 10, 0.811)
+}
+  
+.project-container{
+    text-align: center;
+    width: 18rem;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+  
+.project-container p{
+    width: 13rem;
+    margin: auto;
+}
+  
+.project-title{
+    margin-bottom: 20px;
+    color: rgba(91, 10, 10, 0.811)
+}
+  
+.project-details{
+    margin-bottom: 20px;
+}
+  
+/* Projects section ends */
+
+/* Contacts section */
+.contact {
+    margin-top: 2rem;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(91, 10, 10, 0.811);
+  }
+  
+  .contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-form-container label {
+    line-height: 2.7em;
+    color:  rgba(91, 10, 10, 0.811);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 20px;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset rgba(91, 10, 10, 0.811);;
+    font-size: 0.875rem;
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: rgba(100, 13, 13, 0.82);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid rgba(91, 10, 10, 0.811);;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(91, 10, 10, 0.811);
+    
+  }
+  
+  .submit-btn:hover {
+    background-color: rgba(91, 10, 10, 0.811);
+    cursor: pointer;
+    color: white;
+  }
+  /* Contacts section ends */
+
+  /* Social buttons */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }
+  /* Social button ends */
+
+  /* Scroll to top button */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+  /* Scroll to top button ends */
+
+  /* Footer section */
+footer {
+    background-color: rgba(100, 13, 13, 0.315);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+  /* Footer section ends */
+
+  /* General (utilities) */
+.icon-card{
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+}
+  
+.project-card{
+    background-color: #fff;
+    border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: white;
+      color: black;
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    nav ul li {
+      margin: 8px;
+    }
+    nav ul li:hover {
+        font-size: 15px;
+        text-decoration: underline;
+      }
+  
+    .burger-menu{
+      display: block;
+      
+    }
+  
+    nav ul.show{
+      transform: translateX(0);
+    }
+  
+    .hero{
+      flex-direction: column;
+
+    }
+  
+    .hero img {
+      width: 200px;
+     
+    }
+  
+    .bio{
+      width: 20.5rem;
+      margin: auto;
+    }
+  
+    .more-about {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    }
+  
+    .more-about h2 {
+      text-align: center;
+    }
+  
+    .more-about p {
+      text-align: justify;
+    }
+  
+    .icon {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-container {
+      width: 20.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 23.75rem;
+    }
+}
+  
+@media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+}
